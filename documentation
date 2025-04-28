@@ -1,0 +1,11 @@
+#### Problème 1 : Module not found
+- **Cause** : Le fichier `App.js` n'était pas correctement référencé dans `index.js`.
+- **Solution** : Correction de l'importation dans `index.js` :
+  ```javascript
+  import App from './App';
+
+  #### Problème 2 : Temps écoulé non mis à jour
+Cause : L'intervalle n'était pas correctement nettoyé.
+Solution : Ajout de clearInterval dans componentWillUnmount.
+
+L'application fonctionne correctement. Le profil s'affiche/cacher avec le bouton, et le temps écoulé est mis à jour en temps réel.
